@@ -1,7 +1,8 @@
 import React from "react";
 
-import classes from "./Burger.css";
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
+
+import classes from "./Burger.css";
 
 const Burger = (props) => {
   // transforming an object of key-value pairs into the array of ingredients where the value of the object is important for to know many ingredients we need and the key is important for which type of the ingredients we need
