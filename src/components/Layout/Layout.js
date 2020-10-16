@@ -9,17 +9,28 @@ import classes from "./Layout.css";
 // we are using Layout comp as a wrappir around the core comp that we want to render to the screen
 class Layout extends Component {
   state = {
-    showSideDrawer: true,
+    showSideDrawer: false,
   };
 
   sideDrawerClosedHandler = () => {
     this.setState({ showSideDrawer: false });
   };
 
+  // sideDrawerShowedHandler = () => {
+  //   this.setState({ showSideDrawer: true });
+  // };
+
+  sideDrawerToggleHandler = () => {
+    this.setState((prevState) => {
+      return { showSideDrawer: !prevState.showSideDrawer };
+    });
+  };
+
   render() {
     return (
       <Aux>
-        <Toolbar />
+        {/* <Toolbar clicked={this.sideDrawerShowedHandler} /> */}
+        <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
         <SideDrawer
           closed={this.sideDrawerClosedHandler}
           open={this.state.showSideDrawer}
