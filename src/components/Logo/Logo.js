@@ -4,7 +4,7 @@ import classes from "./Logo.css";
 
 import burgerLogo from "../../assets/images/burger-logo.png";
 
-const Logo = (props) => (
+const Logo = () => (
   <div className={classes.Logo}>
     <img src={burgerLogo} alt="MyBurger" />
   </div>
