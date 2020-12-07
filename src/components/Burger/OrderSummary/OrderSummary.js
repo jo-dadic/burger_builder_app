@@ -47,7 +47,7 @@ export default OrderSummary;
 
 OrderSummary.propTypes = {
   ingredients: PropTypes.object,
-  price: PropTypes.string,
+  price: PropTypes.number,
   purchaseCancelled: PropTypes.func,
   purchaseContinued: PropTypes.func,
 };
