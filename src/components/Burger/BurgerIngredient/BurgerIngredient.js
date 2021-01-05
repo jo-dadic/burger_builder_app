@@ -32,7 +32,7 @@ class BurgerIngredient extends Component {
         ingredient = <div className={classes.Bacon}></div>;
         break;
       default:
-        null;
+        return null;
     }
 
     return ingredient;
